@@ -4,10 +4,10 @@ import time
 
 def run_servers():
     # Start the backend server
-    backend = subprocess.Popen(["python", "-m", "backend"])
+    backend = subprocess.Popen(["python3", "-m", "backend"]) #Use python instead of python3 for windows
 
     # Start the frontend server
-    frontend = subprocess.Popen(["python", "-m", "http.server", "4000"])
+    frontend = subprocess.Popen(["python3", "-m", "http.server", "4000"]) #Use python instead of python3 for windows
 
     # Wait briefly to ensure servers have time to start
     # time.sleep(2)
